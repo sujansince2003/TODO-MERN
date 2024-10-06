@@ -1,9 +1,9 @@
 const z = require("zod");
 
 const validateTodo = z.object({
-  title: z.string().required(),
-  description: z.string().required(),
-  status: z.boolean().required(),
+  title: z.string(),
+  description: z.string(),
+  status: z.boolean(),
 });
 
 module.exports = validateTodo;
